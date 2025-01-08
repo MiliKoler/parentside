@@ -12,10 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
-
-    /* Baggrundsmønster */
     background-image: 
         radial-gradient(circle, rgba(40, 167, 69, 0.5) 2px, transparent 2px),
         radial-gradient(circle, rgba(0, 119, 182, 0.5) 2px, transparent 2px),
@@ -23,58 +20,45 @@ body {
         linear-gradient(to bottom, rgba(239, 87, 119, 0.15) 1px, transparent 1px);
     background-size: 80px 80px, 100px 100px, 120px 120px, 120px 120px;
     background-position: center;
-    transition: background-position 0.1s ease;
+    text-align: center;
+    padding: 20px;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h1 {
     color: var(--accent-color);
     font-size: 2.5em;
-    margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-main {
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-}
-
-.link-container {
+.button-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    align-items: center;
 }
 
-.link-box {
-    display: block;
+.nav-button {
     background-color: var(--accent-color);
     color: white;
-    padding: 20px;
-    border-radius: 8px;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.link-box:hover {
-    transform: scale(1.05);
+.nav-button:hover {
     background-color: var(--hover-bg-color);
-}
-
-.link-box h2 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.link-box p {
-    margin-top: 10px;
-    font-size: 1em;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
